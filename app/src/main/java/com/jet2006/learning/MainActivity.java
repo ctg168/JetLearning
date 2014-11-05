@@ -16,8 +16,6 @@ import android.view.View;
 import android.view.View.OnKeyListener;
 import android.widget.Button;
 
-
-import com.jet2006.learning.ExamFragment;
 import com.jet2006.terry.jetlearning.R;
 
 public class MainActivity extends FragmentActivity {
