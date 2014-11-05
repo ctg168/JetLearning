@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="app_nav_background">#f0eff4</color>
+    <color name="app_user_background">#2192f8</color>
+
+    <!-- 灰色，级别越高，颜色越深 -->
+    <color name="jet_background_deep_01">#fff4f4f4</color>
+    <color name="jet_background_deep_02">#ffd3d3d3</color>
+
+
+    <!-- 颜色字典 -->
+    <color name="transparent">#00000000</color>
+    <color name="jet_color_ffe3e3e3">#ffe3e3e3</color>
+    <color name="jet_color_ff3e3e3e">#ff3e3e3e</color>
+    <color name="jet_focus_background">#87cefa</color>
+
+    <!-- 与主题无关的基本颜色 -->
+    <!-- 文字 -->
+    <color name="jet_text_heave">#ff000000</color>
+    <color name="jet_text_default">#87000000</color>
+    <color name="jet_text_secondary">#48000000</color>
+    <color name="jet_text_weak">#24000000</color>
+
+    <!-- 文字 -->
+    <color name="jet_white_text_heave">#ffffffff</color>
+    <color name="jet_white_text_default">#87ffffff</color>
+    <color name="jet_white_text_secondary">#48ffffff</color>
+    <color name="jet_white_text_weak">#24ffffff</color>
+
+    <!--深浅色-->
+    <color name="jet_white_100">#ffffffff</color>
+    <color name="jet_white_87">#87ffffff</color>
+    <color name="jet_white_48">#48ffffff</color>
+    <color name="jet_white_24">#24ffffff</color>
+
+    <color name="card_color_1">#f1a30b</color>
+    <color name="card_color_2">#60aa17</color>
+    <color name="card_color_3">#00ccff</color>
+    <color name="card_color_4">#e51400</color>
+    <color name="card_color_5">#7b4f9e</color>
+    <color name="card_color_6">#20608e</color>
+
+
+</resources>

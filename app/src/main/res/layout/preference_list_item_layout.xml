@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:paddingRight="?android:scrollbarSize" >
+ 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_marginTop="1.0dip"
+        android:layout_weight="1.0" >
+    <ImageView
+        android:id="@+id/iv_perference_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+         
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_perference_icon"
+            android:paddingLeft="15dp"
+            android:ellipsize="marquee"
+            android:layout_centerVertical="true"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textSize="18.0sp" />
+ 
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:maxLines="4"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+ 
+    <LinearLayout
+        android:id="@+id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+ 
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jet_background_deep_02"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/card_color_6">
+
+        <TextView
+            android:id="@+id/resource_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="0.1"
+            android:text="变电站值班员高级技师考试冲刺试题"
+            android:textColor="@android:color/white"
+            android:textSize="16.0dip" />
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/cover_track"
+            android:layout_width="4.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/timeline_track" />
+
+        <ImageView
+            android:id="@+id/cover_nowdot"
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="23.0dip"
+            android:layout_marginLeft="66.0dip"
+            android:src="@drawable/timeline_dot" />
+
+        <ToggleButton
+            android:id="@+id/user_all"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/image_togglebutton_style_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/resource_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cover_nowdot"
+            android:layout_toRightOf="@+id/cover_nowdot"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="0.1"
+            android:text="一共学习32次，获取322.5分"
+            android:textColor="@android:color/white"
+            android:textSize="10.0dip" />
+
+        <ImageView
+            android:id="@+id/learning_download"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/download" />
+
+        <ImageView
+            android:id="@+id/learning_write"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/learning_download"
+            android:src="@drawable/write" />
+
+        <ImageView
+            android:id="@+id/learning_read"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/learning_write"
+            android:src="@drawable/read" />
+
+    </RelativeLayout>
+
+    <!--列表视图-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/resource_detail_row" />
+
+            <include layout="@layout/resource_detail_row_read" />
+
+            <include layout="@layout/resource_detail_row_read" />
+
+            <include layout="@layout/resource_detail_row_read" />
+
+            <include layout="@layout/resource_detail_row" />
+
+            <include layout="@layout/resource_detail_row" />
+
+            <include layout="@layout/resource_detail_row_read" />
+
+            <include layout="@layout/resource_detail_row" />
+
+            <include layout="@layout/resource_detail_row" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

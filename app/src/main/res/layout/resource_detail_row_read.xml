@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/jet_background_deep_02">
+
+    <RelativeLayout
+        android:id="@+id/left_panel"
+        android:layout_width="50.0dip"
+        android:layout_height="65.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jet_text_default"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="2014.10.29"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/totalPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:text="52.2分"
+            android:textSize="12sp"
+            android:background="@drawable/abc_textfield_search_default_mtrl_alpha"
+            android:textColor="@color/jet_text_heave" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/user_photo"-->
+        <!--android:layout_width="44.0dip"-->
+        <!--android:layout_height="44.0dip"-->
+        <!--android:layout_above="@+id/user_name"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/user" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/user_photo"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="@color/jet_text_default"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="奥巴马"-->
+        <!--android:textSize="8sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/mixed_feed_author_photo_overlay"-->
+        <!--android:layout_width="44.0dip"-->
+        <!--android:layout_height="44.0dip"-->
+        <!--android:layout_marginLeft="8.0dip"-->
+        <!--android:layout_marginTop="6.0dip"-->
+        <!--android:src="@drawable/moment_avatar" />-->
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/cover_track"
+        android:layout_width="4.0dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="72.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/timeline_track" />
+
+
+
+    <ImageView
+        android:id="@+id/moment_bigdot"
+        style="@style/timeline_moment_big_dot"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/left_panel"
+        android:background="@drawable/timeline_moment_bigdot"
+        android:src="@drawable/timeline_moment_dot_colored" />
+
+    <ImageView
+        style="@style/timeline_moment_big_dot"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/left_panel"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/read" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/moment_bigdot"
+        android:layout_alignTop="@+id/moment_bigdot"
+        android:layout_marginLeft="5dp"
+        android:text="总计学习51.8分钟，做对211道试题，做错64道试题
+"        android:textColor="@color/jet_text_default" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/jet_white_48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/jet_white_24" />
+
+</RelativeLayout>

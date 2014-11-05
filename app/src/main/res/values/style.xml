@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="JetAppThemeLight" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/jet_text_default</item>
+    </style>
+
+    <style name="JetAppThemeDark" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style_selector</item>
+    </style>
+
+    <style name="timeline_moment_big_dot">
+        <item name="android:paddingLeft">7.0px</item>
+        <item name="android:paddingTop">6.0px</item>
+        <item name="android:paddingRight">7.0px</item>
+        <item name="android:paddingBottom">8.0px</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D3D3D3" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/app_user_background" >
+
+            <ImageView
+                android:id="@+id/listmenu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_null"
+                android:src="@drawable/app_list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_question_title"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_null"
+                android:src="@drawable/app_search" />
+        </RelativeLayout>
+        <!--
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/qlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#D3D3D3"
+            android:dividerHeight="1dp"
+            ptr:ptrDrawable="@drawable/app_icon_logo1" />
+        -->
+
+        <com.jet2006.controls.BindingListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/qlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:divider="#D3D3D3"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/my_general_item_selector"
+            ptr:ptrDrawable="@drawable/app_icon_logo1" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_menu"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:background="#FFFFFF"
+        android:orientation="vertical" />
+
+</android.support.v4.widget.DrawerLayout>

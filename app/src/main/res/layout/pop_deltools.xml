@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_dellayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDF3"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <Button
+        android:id="@+id/btnSelAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="#60B617"
+        android:text="@string/app_selall"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="#FCD208"
+        android:text="@string/app_clear"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="#8D1918"
+        android:text="@string/app_del"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:background="#666666"
+        android:text="@string/app_cancel"
+        android:textColor="#fff" />
+
+</LinearLayout>

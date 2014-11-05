@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/LearningPic"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="left|center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/word_02" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/LearningName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jet_text_heave" />
+
+        <TextView
+            android:id="@+id/LearningPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jet_text_weak"
+            android:textSize="12sp"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LearningInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/jet_text_secondary" >
+    </TextView>
+
+</LinearLayout>

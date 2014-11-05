@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/navbar"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_nav_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btnMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_my_selector"
+            android:onClick="onNavClick"
+            android:tag="0"
+            android:text="@string/app_my"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_question_selector"
+            android:onClick="onNavClick"
+            android:tag="1"
+            android:text="@string/app_question"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_paper_selector"
+            android:onClick="onNavClick"
+            android:tag="2"
+            android:text="@string/app_paper"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_res_selector"
+            android:onClick="onNavClick"
+            android:tag="3"
+            android:text="@string/app_res"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_exam_selector"
+            android:onClick="onNavClick"
+            android:tag="4"
+            android:text="@string/app_exam"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnOffline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_nav_background"
+            android:drawableTop="@drawable/app_navbar_offline_selector"
+            android:onClick="onNavClick"
+            android:tag="5"
+            android:text="@string/app_offline"
+            android:textColor="@drawable/app_navbar_text_selector"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

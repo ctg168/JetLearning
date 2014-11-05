@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JetLearning.iml" filepath="$PROJECT_DIR$/JetLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThirdPart.GridListViewAdapters/ThirdPart.GridListViewAdapters.iml" filepath="$PROJECT_DIR$/ThirdPart.GridListViewAdapters/ThirdPart.GridListViewAdapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThirdPart.PulltoRefresh/ThirdPart.PulltoRefresh.iml" filepath="$PROJECT_DIR$/ThirdPart.PulltoRefresh/ThirdPart.PulltoRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThirdPart.Volley/ThirdPart.Volley.iml" filepath="$PROJECT_DIR$/ThirdPart.Volley/ThirdPart.Volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
+

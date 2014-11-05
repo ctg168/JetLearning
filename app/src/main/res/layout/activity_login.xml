@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/txtAccount"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/login_edittext"
+        android:hint="@string/app_login_account"
+        android:paddingLeft="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edittext"
+        android:hint="@string/app_login_password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:singleLine="true" />
+
+    <CheckBox
+        android:id="@+id/chkSaveInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存登录信息"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_button"
+        android:onClick="onLogin"
+        android:text="@string/app_login_text"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
