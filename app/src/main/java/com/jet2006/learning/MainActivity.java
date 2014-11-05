@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity {
                         Log.i("fragment back stack", Integer
                                 .toString(frgManager.getBackStackEntryCount()));
 
-                        Fragment view = (Fragment) frgManager
+                        Fragment view = frgManager
                                 .findFragmentById(R.id.views);
                         if (view instanceof MyFragment) {
                             displayNavgation(btnMy);
@@ -72,9 +72,9 @@ public class MainActivity extends FragmentActivity {
 
         Log.i("MainOnkey", Integer.toString(event.getKeyCode()));
 
-        Fragment view = (Fragment) frgManager.findFragmentById(R.id.views);
+        Fragment view = frgManager.findFragmentById(R.id.views);
         if (view instanceof OnKeyListener) {
-            if (((OnKeyListener) view).onKey(null, keyCode, event) == true) {
+            if (((OnKeyListener) view).onKey(null, keyCode, event)) {
                 return true;
             }
         }
@@ -124,7 +124,7 @@ public class MainActivity extends FragmentActivity {
 
     @SuppressLint("InlinedApi")
     private void displayView(String tag) {
-        Fragment view = (Fragment) frgManager.findFragmentById(R.id.views);
+        Fragment view;
 
         if (tag.equals("0")) {
             view = new MyFragment();

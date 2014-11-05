@@ -15,9 +15,6 @@
  */
 package com.birin.gridlistviewadapters;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
@@ -30,6 +27,7 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
+
 import com.birin.gridlistviewadapters.dataholders.CardDataHolder;
 import com.birin.gridlistviewadapters.dataholders.CardPositionInfo;
 import com.birin.gridlistviewadapters.dataholders.RowDataHolder;
@@ -37,6 +35,9 @@ import com.birin.gridlistviewadapters.utils.ChildViewsClickHandler;
 import com.birin.gridlistviewadapters.utils.GridDataStructure;
 import com.birin.gridlistviewadapters.utils.OnLoadMoreRequestListener;
 import com.birin.gridlistviewadapters.utils.ViewHolderPositionTagger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Class BaseGridAdapter is a "GRID" wrapper around

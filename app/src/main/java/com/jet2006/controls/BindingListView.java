@@ -54,7 +54,7 @@ public class BindingListView extends PullToRefreshListView {
     }
 
     public void setDataSource(List<? extends Object> javaBeanList) {
-        // ÉèÖÃÊý¾ÝÔ´µÄÊ±ºòË¢ÐÂÊý¾Ý
+
         this.mData.clear();
         this.addAllData(javaBeanList);
     }
@@ -97,8 +97,8 @@ public class BindingListView extends PullToRefreshListView {
                     String field = method.getName();
                     field = field.substring(field.indexOf("get") + 3);
 
-                    //´Ë´¦Ó¦ÎªÊ¹ÓÃµÄ.NET¶ÔÏó£¬.NETµÄEntity¸ñÊ½ÓëJavaBeanµÄ¸ñÊ½±ØÐë±£³ÖÒ»ÖÂ
-                    //ËùÓÐ´Ë´¦²»ÊÊÓÃÓÚ±ê×¼µÄJavaBean¸ñÊ½
+                    //ï¿½Ë´ï¿½Ó¦ÎªÊ¹ï¿½Ãµï¿½.NETï¿½ï¿½ï¿½ï¿½.NETï¿½ï¿½Entityï¿½ï¿½Ê½ï¿½ï¿½JavaBeanï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ë±£ï¿½ï¿½Ò»ï¿½ï¿½
+                    //ï¿½ï¿½ï¿½Ð´Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½×¼ï¿½ï¿½JavaBeanï¿½ï¿½Ê½
                     //field = field.toLowerCase().charAt(0) + field.substring(1);
 
                     Object value = method.invoke(javaBean, (Object[]) null);
@@ -183,7 +183,7 @@ public class BindingListView extends PullToRefreshListView {
                 if (null != v) {
                     final Object data = dataSet.get(dataStruct[i]);
 
-                    // Ê¹ÓÃViewµÄ×Ô¶¨Òå³ÊÏÖ´¦Àí·½Ê½
+                    // Ê¹ï¿½ï¿½Viewï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ê½
                     if (null != mConverter) {
                         IValueConverter converter = this.mConverter.get(vId);
                         if (null != converter) {
@@ -205,7 +205,7 @@ public class BindingListView extends PullToRefreshListView {
                         } else {
                             throw new IllegalStateException(v.getClass()
                                     .getName()
-                                    + " °ó¶¨½öÖ§³ÖBoolean,¶ø²»ÊÇ "
+                                    + " ï¿½ó¶¨½ï¿½Ö§ï¿½ï¿½Boolean,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "
                                     + (data == null ? "<null>"
                                     : data.getClass()));
                         }
@@ -220,12 +220,12 @@ public class BindingListView extends PullToRefreshListView {
                         }
                     } else {
                         throw new IllegalStateException(v.getClass().getName()
-                                + "¸ÃÊÓÍ¼²»±»Ö§³Ö");
+                                + "ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½");
                     }
                 }
             }
 
-            // ×¢²áÊÓÍ¼µÄClickÊÂ¼þ
+            // ×¢ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Clickï¿½Â¼ï¿½
             if (null != mOnClickListener) {
                 for (int resource : mOnClickListener.keySet()) {
                     View clickView = view.findViewById(resource);

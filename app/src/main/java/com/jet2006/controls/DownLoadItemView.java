@@ -1,5 +1,6 @@
 package com.jet2006.controls;
 
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
@@ -119,7 +120,7 @@ public class DownLoadItemView extends FrameLayout {
             File[] files = mContext.getExternalFilesDirs("");
             String path = files[1].getPath();
 
-            // ÉèÖÃ´æ´¢µÄÄ¿Â¼
+            // è®¾ç½®å­˜å‚¨çš„ç›®å½•
             this.localFolder = path + "/JetFolder/";
 
             File folder = new File(this.localFolder);
@@ -127,7 +128,7 @@ public class DownLoadItemView extends FrameLayout {
                 folder.mkdir();
             }
 
-            // ÉèÖÃÎÄ¼ş´æ·ÅµÄÈ«Â·¾¶£¬°üº¬ÎÄ¼şÃû³Æ
+            // è®¾ç½®æ–‡ä»¶å­˜æ”¾çš„å…¨è·¯å¾„ï¼ŒåŒ…å«æ–‡ä»¶åç§°
             this.localFilePath = this.localFolder + this.downLoadData.getName();
 
             File testFile = new File(this.localFilePath);
@@ -224,7 +225,7 @@ public class DownLoadItemView extends FrameLayout {
                 connection.setRequestMethod("GET");
                 connection.setConnectTimeout(15 * 1000);
 
-                // Rang¸ñÊ½,bytes= start - end
+                // Rangæ ¼å¼,bytes= start - end
                 connection.setRequestProperty("Range",
                         "bytes=" + Integer.toString(completeSize) + "-");
                 connection.connect();
